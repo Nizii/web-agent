@@ -1,42 +1,39 @@
 ```html
 <!DOCTYPE html>
-<html lang="de">
+<html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Dominic</title>
+<title>Mo's Random Color Website</title>
 <style>
-    body {
-        font-family: Arial, sans-serif;
-        background-color: #fff;
-        color: #000;
-        margin: 0;
-        padding: 0;
-    }
-    h1 {
-        color: red;
-        background-color: yellow;
-        text-align: center;
-        padding: 20px;
-    }
-    .content {
-        padding: 20px;
-    }
+  body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+    background-color: rgb(
+      Math.floor(Math.random() * 256),
+      Math.floor(Math.random() * 256),
+      Math.floor(Math.random() * 256)
+    );
+  }
+  h1 {
+    color: white;
+    font-size: 3rem;
+    text-transform: uppercase;
+  }
 </style>
 </head>
 <body>
-<h1>Dominic</h1>
-<div class="content">
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus fringilla, lorem ut sodales efficitur, justo ex posuere orci, non volutpat tortor leo in nisi. Nam sed lectus vel turpis efficitur bibendum at vel diam. Integer tincidunt, ligula nec sollicitudin ultricies, lacus purus malesuada nisi, nec iaculis mi turpis id risus. Nullam neque nibh, accumsan eu dolor non, scelerisque laoreet sapien. Vestibulum pharetra hendrerit nunc vitae aliquam. Proin sed metus nec lorem scelerisque malesuada vel nec felis. Praesent sollicitudin sit amet lacus nec dapibus. Proin scelerisque egestas arcu, in pulvinar diam imperdiet ac. Ut ut laoreet neque. Proin auctor nunc ac magna rutrum tempor. Duis luctus eros in odio pretium lacinia. Nulla facilisi. Duis vitae felis nec justo tempor tincidunt. Cras justo velit, fermentum ut mollis eu, semper sit amet sem.</p>
-    <p>Vivamus in libero quis augue vehicula pretium at nec nisi. Cras efficitur nunc vel odio placerat, non finibus tellus scelerisque. Sed id pellentesque nulla. Aliquam congue elementum dolor sed pharetra. Donec at condimentum nibh, vel dapibus quam. Ut non metus gravida, varius dolor id, aliquet leo. Sed sed dolor condimentum, auctor lacus sed, pharetra quam. Etiam vel sapien massa. Praesent ac cursus nisi, nec imperdiet lorem. Nullam commodo, velit sit amet accumsan ullamcorper, dolor ex ultricies lacus, nec gravida nisi libero eget velit. Nulla mollis risus nec scelerisque ultrices. In hac habitasse platea dictumst. Quisque ac nisl eget orci aliquet vehicula. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;</p>
-    <p>Sed ac metus sapien. Integer ac urna non sem cursus fringilla id eget nunc. Curabitur in rutrum ligula. Cras sagittis suscipit mauris, sit amet fermentum felis dignissim et. Duis nec ultrices leo. Sed nec justo a enim venenatis tincidunt. In placerat mattis ultrices. Proin in malesuada libero. Quisque et nisi ac mi feugiat interdum vitae nec turpis. Maecenas eget eros tortor.</p>
-    <p>Donec nec rutrum velit, vel pharetra massa. Sed ut facilisis lorem. Vestibulum congue sapien a elit viverra, in convallis purus tempus. Proin ac urna sed tellus elementum feugiat quis quis mauris. Aliquam vel metus sodales, semper lorem ut, finibus ex. Ut at sapien luctus, convallis lacus ut, accumsan mi. Nullam pellentesque justo sed quam interdum, in vestibulum nibh lacinia. Curabitur posuere urna leo, at rutrum mauris vestibulum non. Maecenas at elementum felis. Aliquam ultricies vehicula ante, vel feugiat ex accumsan ac.</p>
-</div>
-<script>
-    window.addEventListener('scroll', function() {
-        console.log('Scrolling...');
+  <h1>Mo</h1>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      document.querySelector('h1').style.color = `rgb(${Math.floor(Math.random() * 256)}, ${Math.floor(Math.random() * 256)}, ${Math.floor(Math.random() * 256)})`;
     });
-</script>
+  </script>
 </body>
 </html>
 ```
