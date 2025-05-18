@@ -4,36 +4,51 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Mo's Random Color Website</title>
+<title>Stilvolle Webseite</title>
 <style>
   body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
     margin: 0;
     padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    overflow: hidden;
-    background-color: rgb(
-      Math.floor(Math.random() * 256),
-      Math.floor(Math.random() * 256),
-      Math.floor(Math.random() * 256)
-    );
   }
-  h1 {
-    color: white;
-    font-size: 3rem;
-    text-transform: uppercase;
+  header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+  }
+  main {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   }
 </style>
 </head>
 <body>
-  <h1>Mo</h1>
-  <script>
-    document.addEventListener('DOMContentLoaded', () => {
-      document.querySelector('h1').style.color = `rgb(${Math.floor(Math.random() * 256)}, ${Math.floor(Math.random() * 256)}, ${Math.floor(Math.random() * 256)})`;
-    });
-  </script>
+<header>
+  <h1>Willkommen auf unserer stylischen Webseite!</h1>
+</header>
+<main>
+  <h2>Über uns</h2>
+  <p>Wir sind ein innovatives Team von Entwicklern, die modernes Webdesign lieben.</p>
+  
+  <h2>Unsere Projekte</h2>
+  <ul>
+    <li>Webseite A: Eine interaktive Plattform für Musikliebhaber</li>
+    <li>Webseite B: Ein Online-Shop für nachhaltige Produkte</li>
+    <li>Webseite C: Eine Community-Website für Sportbegeisterte</li>
+  </ul>
+  
+  <h2>Kontakt</h2>
+  <p>Du möchtest mehr über unsere Arbeit erfahren? Schreibe uns gerne eine E-Mail an info@webdesign.de</p>
+</main>
+<script>
+  console.log('Diese Webseite wurde mit Liebe erstellt.');
+</script>
 </body>
 </html>
 ```
