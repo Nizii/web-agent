@@ -2,71 +2,52 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Scroll Effekte und Parallax - Web Agent Firma</title>
+<title>Web Agent Firma</title>
 <style>
     body {
         font-family: Arial, sans-serif;
+        background-color: #FFFF00;
+        color: #FF0000;
         margin: 0;
         padding: 0;
     }
-    header {
-        background: #333;
-        color: #fff;
-        text-align: center;
-        padding: 1rem 0;
-    }
-    section {
+    .section {
         height: 100vh;
         display: flex;
         justify-content: center;
         align-items: center;
     }
-    .parallax {
-        background-image: url('path/to/parallax-image.jpg');
+    .section1 {
+        background-image: url('background.jpg');
         background-attachment: fixed;
         background-position: center;
-        background-repeat: no-repeat;
         background-size: cover;
-        height: 100vh;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        color: #fff;
         text-align: center;
     }
-</style>
-<script>
-    window.onscroll = function() {scrollFunction()};
-
-    function scrollFunction() {
-        if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
-            document.querySelector("header").style.fontSize = "1rem";
-        } else {
-            document.querySelector("header").style.fontSize = "2rem";
-        }
+    .section2 {
+        background-color: #FF0000;
     }
-</script>
+    h1 {
+        font-size: 3em;
+    }
+    p {
+        font-size: 1.2em;
+    }
+</style>
 </head>
 <body>
-<header>
-    <h1>Web Agent Firma</h1>
-</header>
-<section>
-    <h2>Scroll Effekte und Parallax</h2>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-</section>
-<div class="parallax">
-    <h2>Parallax Effekt</h2>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-</div>
-<section>
-    <h2>Weitere Dienstleistungen</h2>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-</section>
-<footer>
-    <p>&copy; 2021 Web Agent Firma. Alle Rechte vorbehalten.</p>
-</footer>
+    <div class="section section1">
+        <h1>Web Agent Firma</h1>
+        <p>Wir bieten schöne Scroll Effekte und Parallax-Effekte für Ihre Webseite!</p>
+    </div>
+    <div class="section section2">
+        <h1>Unsere Dienstleistungen</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ac est mauris. Donec faucibus risus id orci rhoncus, eget ultricies tellus lobortis.</p>
+    </div>
+
+<script>
+    // JavaScript code can go here for any interactive elements
+</script>
 </body>
 </html>
